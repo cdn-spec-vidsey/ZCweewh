@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CDN Video</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-1: #0f172a;
+      --bg-2: #1e293b;
+      --card: rgba(255, 255, 255, 0.96);
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --primary: #111827;
+      --primary-hover: #1f2937;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background:
+        radial-gradient(circle at top left, #334155 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #1d4ed8 0%, transparent 30%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-2));
+      color: var(--text);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero {
+      padding: 28px 24px 20px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(248,250,252,0.95), rgba(255,255,255,0.98));
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      color: #1e3a8a;
+      background: #dbeafe;
+      padding: 7px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 28px;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .content {
+      padding: 22px 24px 26px;
+    }
+
+    .info-box {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+
+    .info-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .info-value {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #475569;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      padding: 15px 18px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 700;
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 24px rgba(17, 24, 39, 0.18);
+    }
+
+    .cta:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .cta:active {
+      transform: translateY(0);
+    }
+
+    .note {
+      margin-top: 16px;
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 14px 24px 18px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      background: #fcfcfd;
+    }
+
+    @media (max-width: 480px) {
+      .hero,
+      .content,
+      .footer {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <div class="hero">
+      <span class="badge">Video Content</span>
+      <h1>Watch Video Now</h1>
+      <p class="subtitle">
+        Open the video page using the official link below. Please ensure you recognize the source of the link before proceeding.
+      </p>
+    </div>
+
+    <div class="content">
+      <div class="info-box">
+
+      <p class="description">
+        This page only provides access to video content. It does not require logins, passwords, OTP codes, or other sensitive data.
+      </p>
+
+      <a
+        href="https://cdn-contentpremium.pages.dev/v?id=CyvthzXS1"
+        class="cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open Video
+      </a>
+
+      <p class="note">
+        For security reasons, proceed only if you understand the purpose of this link and trust the source of the sharing.
+      </p>
+    </div>
+
+    <div class="footer">
+      © 2026 Video Access Page
+    </div>
+  </section>
+</body>
+</html>
